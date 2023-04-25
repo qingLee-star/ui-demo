@@ -5,7 +5,7 @@ import SmartyUI from './entry';
 // createApp(Button).mount('#app');
 
 createApp({
-  template:`
+  template: `
     <div>
         <QButton color="pink" round plain icon="search">普通按钮</QButton>
         <QButton color="yellow" round plain icon="edit">普通按钮</QButton>
@@ -13,8 +13,8 @@ createApp({
     </div>
   `
 })
-.use(SmartyUI)
-.mount("#app");
+  .use(SmartyUI)
+  .mount('#app');
 
 // import SFCButton from './components/SFCButton.vue';
 // createApp(SFCButton).mount('#app');
