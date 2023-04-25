@@ -30,5 +30,12 @@ export default defineConfig({
       fileName: 'my-ui',
       formats: ['esm', 'umd', 'iife'],
     }
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    transformMode: {
+      web: [/.[tj]sx$/]
+    }
   }
 });
